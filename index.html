@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Primary Meta Tags -->
+    <title>Name of Company</title>
+    <meta name="title" content="Name of Company" />
+    <!--TODO SEO Content Stuff Here -->
+    <meta
+      name="description"
+      
+      content="SEO Stuff Here"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!--TODO INSERT Company website -->
+    <meta property="og:url" content="https://www.ENTERHERE.com/" />
+    <meta property="og:title" content="Name of Company" />
+    <meta
+      property="og:description"
+      content="SEO Stuff Here"
+    />
+    <meta property="og:image" content="./images/Logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.ENTERHERE.com/" />
+    <meta property="twitter:title" content="Name of Company" />
+    <meta
+      property="twitter:description"
+      content="SEO Stuff Here"
+    />
+    <meta property="twitter:image" content="./images/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name of Company</title>
+   
+
+    <script
+      src="https://kit.fontawesome.com/a3c1e4db5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+
+  </head>
+  <body>
+    <header class="" id="myNavBar">
+      <div class="header-container navbar">
+        <a href="#hero" class="active logo">
+          <!-- <h3 class="logo-text">Chris Creative CakeBalls</h3> -->
+          <img class="logo" src="./images/Logo_NoBack.png" alt="" />
+        </a>
+        <a href="#" class="toggle-button">
+          <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <nav class="navbar-links">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </nav>
+        <a class="header-cta-button" href="#cta"><button>Contact Us</button></a>
+      </div>
+    </header>
+    <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
+    <div id="hero">
+      <img class="hero-image" src="./images/Hero.jpg" alt="Hero Cakeballs" />
+
+      <div class="hero-container">
+        <h1 class="hero-title">New Orleans Driveway Cleaning</h1>
+        <h4 class="hero-description">
+          We Offer quality Driveway Cleaning and pressure washing services. Let
+          us transform your home or business
+        </h4>
+        <div class="glare-circle"></div>
+        <a class="hero-cta-button" href="#cta"><button>Contact Us</button></a>
+      </div>
+    </div>
+    <div id="about">
+      <div class="about-container">
+        <h2 class="about-title">Services Offered</h2>
+        <h4 class="about-description">
+          We offer a variety of services including Driveway Cleaning, House
+          Washing, Deck Washing, Fence Washing and More! We service both
+          residential and commercial.
+        </h4>
+        <img
+          class="about-pic pic1"
+          src="./images/NeedAboutBefore.png"
+          alt="Before Pool"
+        />
+        <img
+          class="about-pic pic2"
+          src="./images/NeedAboutAfter.png"
+          alt="After Pool"
+        />
+      </div>
+    </div>
+    <div id="gallery">
+      <div class="gallery-container">
+        <h2 class="gallery-title">Our Work</h2>
+        <h5 class="gallery-description">
+          Here is some of the work we have done!
+        </h5>
+        <div class="gallery-pictures">
+          <img
+            class="gallery-pic gallery-1"
+            src="./images/Gallery1.png"
+            alt="Gallery1"
+          />
+          <img
+            class="gallery-pic gallery-2"
+            src="./images/Gallery2.png"
+            alt="Gallery2"
+          />
+          <img
+            class="gallery-pic gallery-3"
+            src="./images/Gallery3.png"
+            alt="Gallery3"
+          />
+          <img
+            class="gallery-pic gallery-4"
+            src="./images/Gallery4.png"
+            alt="Gallery4"
+          />
+          <img
+            class="gallery-pic gallery-5"
+            src="./images/Gallery5.png"
+            alt="Gallery5"
+          />
+          <img
+            class="gallery-pic gallery-6"
+            src="./images/Gallery6.png"
+            alt="Gallery6"
+          />
+          <img
+            class="gallery-pic gallery-7"
+            src="./images/Gallery7.png"
+            alt="Gallery7"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="team">
+      <div class="team-container">
+        <h2 class="team-title">Meet Our Team</h2>
+        <h6 class="team-description">
+          Here at New Orleans Driveway Cleaning, we understand that you rely on
+          us to get the job done and get it done right. Let me introduce to you
+          the owners/operators who will be servicing your home. Both Matthew and
+          Dominic are Active Duty Navy Sailors stationed here in New Orleans.
+          Dominic is from Corpus Christi, Texas and has a beautiful wife and 2
+          children at home. Matthew is from the upper peninsula of Michigan. We
+          look foreword to transforming your home!
+        </h6>
+        <div
+          class="team-member member-1"
+          id="clickMe1"
+          onclick="changeToDominic()"
+        >
+          <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
+          <h4 class="member-name">Dominic</h4>
+          <h6 class="member-role text-gray">Founder</h6>
+          <div class="member-social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100005695486009"
+              target="_blank"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <!-- <a
+              href="https://www.instagram.com/chriscreativecakeballs/"
+              target="_blank"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a> -->
+          </div>
+        </div>
+        <div class="team-member member-2" id="clickMe2" onclick="changeToJen()">
+          <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
+          <h4 class="member-name">Matthew</h4>
+          <h6 class="member-role text-gray">Founder</h6>
+          <div class="member-social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100086960268323"
+              target="_blank"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <!-- <a
+              href="https://www.instagram.com/chriscreativecakeballs/"
+              target="_blank"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a> -->
+          </div>
+        </div>
+        <img
+          id="team-pic-dom"
+          class="member-big-pic displayBlock"
+          src="./images/Team1.JPEG"
+          alt="Img of Dom"
+        />
+        <img
+          id="team-pic-matt"
+          class="member-big-pic displayNone"
+          src="./images/Team2.png"
+          alt="Img of Matthew"
+        />
+      </div>
+    </div>
+    <div id="testimony">
+      <div class="testimony-container">
+        <h2 class="testimony-title">Testimonials</h2>
+        <p class="testimony-description">
+          These are some of our customers reviews!
+        </p>
+        <div class="testimonials">
+          <!-- TODO PAGINATION FOR MOBILE AND TABLET TESTIMONIES -->
+          <div class="testimony-block test-1">
+            <h6 class="testimonial">
+              I wanted to sell my house so I had New Orleans Driveway Cleaning
+              come out and do my driveway and front porch. The photos turned out
+              great and I had so many people interested in my house in the first
+              week!
+            </h6>
+            <div class="test-user">
+              <i class="fas fa-user-circle fa-5x test-image"></i>
+              <h5 class="test-name">Debra M.</h5>
+            </div>
+          </div>
+          <div class="testimony-block test-2">
+            <h6 class="testimonial">
+              Dominic and Matthew were awesome. They listened to me and
+              understood the vision that I had for my home. It surprisingly
+              wasn't even expensive!
+            </h6>
+            <div class="test-user">
+              <i class="fas fa-user-circle fa-5x test-image"></i>
+              <h5 class="test-name">Samuel R.</h5>
+            </div>
+          </div>
+          <div class="testimony-block test-3">
+            <h6 class="testimonial">
+              I had gotten several quotes from other pressure washing companies
+              and I ended up going with the cheapest one. I ended up getting the
+              lowest of the low service and they screwed up my driveway! Luckily
+              I was able to get ahold of New Orleans Driveway Cleaning who came
+              out the very next day and was able to correct the first company's
+              mistakes! Thank You!
+            </h6>
+            <div class="test-user">
+              <i class="fas fa-user-circle fa-5x test-image"></i>
+              <h5 class="test-name">Roldando R.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="price">
+      <div class="price-container">
+        <h2 class="price-title">Services</h2>
+        <p class="price-description">
+          Although we specialize in driveway cleaning, we also offer various
+          pressure washing services! Here is a list of what we offer but we are
+          open to special requests! Prices vary based on size, location and
+          condition.
+        </p>
+        <div class="price-block price-1">
+          <h4 class="price-block-title">Basic Driveway</h4>
+          <div class="price-block-price">
+            <h6 class="price-block-price-description">Starting at</h6>
+            <h3 class="price-block-price-price">$295</h3>
+          </div>
+          <div class="price-block-description">
+            <h6>Sidewalk Cleaning</h6>
+            <h6>Walkway Cleaning</h6>
+            <h6>Porch Cleaning</h6>
+            <h6>Sodium Hypochlorite (Concrete)</h6>
+          </div>
+          <button class="price-block-button">
+            <a href="#cta" class="price-block-price-price-link">Contact Us</a>
+          </button>
+          <!-- <button class="price-block-button">Purchase</button> -->
+        </div>
+
+        <div class="price-block price-2">
+          <h4 class="price-block-title">Additional</h4>
+          <div class="price-block-price">
+            <h3 class="price-block-price-price">Contact for Pricing</h3>
+          </div>
+          <div class="price-block-description description-2">
+            <h6>House Washing</h6>
+            <h6>Fence Cleaning</h6>
+            <h6>Deck Washing</h6>
+            <h6>Commercial Parking Lot</h6>
+          </div>
+          <button class="price-block-button button-2">
+            <a href="#cta" class="price-block-price-price-link">Contact Us</a>
+          </button>
+          <!-- <button class="price-block-button">Purchase</button> -->
+        </div>
+      </div>
+    </div>
+    <div id="cta">
+      <!-- <img class="cta-background" src="./images/NewOrleansBG.png" alt="" /> -->
+      <div class="cta-container">
+        <h2 class="cta-title">Contact Us</h2>
+        <h5 class="cta-description">
+          Contact us for a free estimate. We generally use google earth for our
+          estimates so please include what you would like the quote for aswell
+          as the address.
+        </h5>
+        <!-- TODO: CTA FORM HERE -->
+      </div>
+    </div>
+    <footer>
+      <!-- Company Name and Copyright here -->
+      <div class="footer-container">
+        <div class="foot-first">
+          <!-- <h3 class="logo">Chris Creative CakeBalls</h3> -->
+          <img class="logo" src="./images/Logo_NoBack.png" alt="" />
+          <h6 class="footer-disclaimer">
+            © Copyright 2022 (COMPANY NAME HERE) All Right Reserved.
+          </h6>
+        </div>
+        <div class="foot-second">
+          <h6 class="footer-info-word">(METROPLEX AREA)</h6>
+          <a class="footer-info-word" href="tel:+1(913)963-2229"
+            >(TELEPHONE NUMBER)</a
+          >
+          <br />
+          <a
+            href="mailto:neworleansdrivewaycleaning@gmail.com"
+            class="footer-info-word"
+            >(EMAIL ADDRESS)</a
+          >
+          <br />
+        </div>
+        <a class="foot-third" href="https://www.justappin.com" target="_blank">
+          <img
+            src="./assets/JustAppin.png"
+            alt="JustAPPin' Logo"
+            class="footer-image"
+          />
+          <p class="justappin">This Website Was Made by JustAPPin' LLC</p>
+        </a>
+
+        <div class="footer-info"></div>
+        <div class="footer-justappin"></div>
+        <!-- JustAPPin' Disclaimer -->
+      </div>
+    </footer>
+    <script src="app.js"></script>
+<!-- TODO: ADD FIREBASE <SCRIPT> HERE IF WITH GOOGLE FIREBASE -->
+</html>
