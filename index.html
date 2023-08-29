@@ -52,8 +52,7 @@
     <header class="" id="myNavBar">
       <div class="header-container navbar">
         <a href="#hero" class="active logo">
-          <!-- <h3 class="logo-text">Chris Creative CakeBalls</h3> -->
-          <img class="logo" src="./images/Logo_NoBack.png" alt="" />
+          <img class="logo" src="./assets/Logo_WLetter.png" alt="" />
         </a>
         <a href="#" class="toggle-button">
           <i class="fa fa-bars fa-2x"></i>
@@ -70,15 +69,17 @@
     </header>
     <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
     <div id="hero">
-      <img class="hero-image" src="./images/Hero.jpg" alt="Hero Cakeballs" />
+      <div class='hero-block'></div>
+
+<svg id="wave" class='hero-wave' style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 410" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(3, 68, 255, 1)" offset="0%"></stop><stop stop-color="rgba(3, 68, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,369L34.3,362.2C68.6,355,137,342,206,334.8C274.3,328,343,328,411,307.5C480,287,549,246,617,252.8C685.7,260,754,314,823,307.5C891.4,301,960,232,1029,170.8C1097.1,109,1166,55,1234,27.3C1302.9,0,1371,0,1440,34.2C1508.6,68,1577,137,1646,177.7C1714.3,219,1783,232,1851,232.3C1920,232,1989,219,2057,239.2C2125.7,260,2194,314,2263,328C2331.4,342,2400,314,2469,293.8C2537.1,273,2606,260,2674,232.3C2742.9,205,2811,164,2880,123C2948.6,82,3017,41,3086,54.7C3154.3,68,3223,137,3291,170.8C3360,205,3429,205,3497,205C3565.7,205,3634,205,3703,177.7C3771.4,150,3840,96,3909,95.7C3977.1,96,4046,150,4114,150.3C4182.9,150,4251,96,4320,95.7C4388.6,96,4457,150,4526,150.3C4594.3,150,4663,96,4731,109.3C4800,123,4869,205,4903,246L4937.1,287L4937.1,410L4902.9,410C4868.6,410,4800,410,4731,410C4662.9,410,4594,410,4526,410C4457.1,410,4389,410,4320,410C4251.4,410,4183,410,4114,410C4045.7,410,3977,410,3909,410C3840,410,3771,410,3703,410C3634.3,410,3566,410,3497,410C3428.6,410,3360,410,3291,410C3222.9,410,3154,410,3086,410C3017.1,410,2949,410,2880,410C2811.4,410,2743,410,2674,410C2605.7,410,2537,410,2469,410C2400,410,2331,410,2263,410C2194.3,410,2126,410,2057,410C1988.6,410,1920,410,1851,410C1782.9,410,1714,410,1646,410C1577.1,410,1509,410,1440,410C1371.4,410,1303,410,1234,410C1165.7,410,1097,410,1029,410C960,410,891,410,823,410C754.3,410,686,410,617,410C548.6,410,480,410,411,410C342.9,410,274,410,206,410C137.1,410,69,410,34,410L0,410Z"></path></svg>
+      <!-- <svg id="wave" class='hero-wave' style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 280" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(3, 68, 255, 1)" offset="0%"></stop><stop stop-color="rgba(3, 68, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,252L34.3,247.3C68.6,243,137,233,206,228.7C274.3,224,343,224,411,210C480,196,549,168,617,172.7C685.7,177,754,215,823,210C891.4,205,960,159,1029,116.7C1097.1,75,1166,37,1234,18.7C1302.9,0,1371,0,1440,23.3C1508.6,47,1577,93,1646,121.3C1714.3,149,1783,159,1851,158.7C1920,159,1989,149,2057,163.3C2125.7,177,2194,215,2263,224C2331.4,233,2400,215,2469,200.7C2537.1,187,2606,177,2674,158.7C2742.9,140,2811,112,2880,84C2948.6,56,3017,28,3086,37.3C3154.3,47,3223,93,3291,116.7C3360,140,3429,140,3497,140C3565.7,140,3634,140,3703,121.3C3771.4,103,3840,65,3909,65.3C3977.1,65,4046,103,4114,102.7C4182.9,103,4251,65,4320,65.3C4388.6,65,4457,103,4526,102.7C4594.3,103,4663,65,4731,74.7C4800,84,4869,140,4903,168L4937.1,196L4937.1,280L4902.9,280C4868.6,280,4800,280,4731,280C4662.9,280,4594,280,4526,280C4457.1,280,4389,280,4320,280C4251.4,280,4183,280,4114,280C4045.7,280,3977,280,3909,280C3840,280,3771,280,3703,280C3634.3,280,3566,280,3497,280C3428.6,280,3360,280,3291,280C3222.9,280,3154,280,3086,280C3017.1,280,2949,280,2880,280C2811.4,280,2743,280,2674,280C2605.7,280,2537,280,2469,280C2400,280,2331,280,2263,280C2194.3,280,2126,280,2057,280C1988.6,280,1920,280,1851,280C1782.9,280,1714,280,1646,280C1577.1,280,1509,280,1440,280C1371.4,280,1303,280,1234,280C1165.7,280,1097,280,1029,280C960,280,891,280,823,280C754.3,280,686,280,617,280C548.6,280,480,280,411,280C342.9,280,274,280,206,280C137.1,280,69,280,34,280L0,280Z"></path></svg> -->
+<img class="hero-image" src="./images/Hero.jpg" alt="Hero Cakeballs" />
 
       <div class="hero-container">
-        <h1 class="hero-title">New Orleans Driveway Cleaning</h1>
-        <h4 class="hero-description">
-          We Offer quality Driveway Cleaning and pressure washing services. Let
-          us transform your home or business
-        </h4>
-        <div class="glare-circle"></div>
+        <h1 class="hero-title">Welcome to Cornerstone Digital Solutions Empowering Government Agencies through Digital Excellence</h1>
+        <h5 class="hero-description">
+          Are you a government agency seeking to transform your digital presence? Look no further than Cornerstone Digital Solutions – your dedicated partner in harnessing the true potential of digital marketing to connect, engage, and inspire your constituents.
+        </h5>
         <a class="hero-cta-button" href="#cta"><button>Contact Us</button></a>
       </div>
     </div>
