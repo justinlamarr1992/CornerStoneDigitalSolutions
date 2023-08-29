@@ -28,19 +28,19 @@
 
   /* Text Size */
   /* h1 weight/Bold lineheight/80*/
-  --wh1: 72px;
+  --wh1: 60px;
   --mh1: 56px;
   /* h2 weight/Bold lineheight/64*/
-  --wh2: 56px;
+  --wh2: 48px;
   --mh2: 34px;
   /* h3 weight/Bold lineheight/48*/
-  --wh3: 40px;
+  --wh3: 26px;
   --mh3: 24px;
   /* h4 weight/Bold lineheight/32*/
-  --wh4: 24px;
+  --wh4: 20px;
   --mh4: 16px;
   /* h5 weight/Regular lineheight/24*/
-  --wh5: 20px;
+  --wh5: 16px;
   /* --mh5: ; */
   /* label weight/Bold lineheight/auto*/
   --wlabel: 12px;
@@ -109,7 +109,6 @@ body {
   h1 {
     font-size: var(--wh1);
     font-weight: Bold;
-    line-height: 60px;
     line-height: 68px;
   }
   h2 {
@@ -119,18 +118,18 @@ body {
   }
   h3 {
     font-size: var(--wh3);
-    font-weight: Bold;
-    line-height: 48px;
+    font-weight: bold;
+    line-height: 32px;
   }
   h4 {
     font-size: var(--wh4);
-    font-weight: Bold;
+    font-weight: normal;
     line-height: 32px;
   }
   h5 {
     font-size: var(--wh5);
     font-weight: lighter;
-    line-height: 32px;
+    line-height: 24px;
   }
   h6 {
     font-size: var(--wt);
@@ -594,13 +593,10 @@ body {
 
   }
   .hero-wave {
-        /* padding-top: 500px; */
-
-     /* width: 100%;
-    height: 100%; */
     grid-column: 1/5;
     grid-row: 2/3;
   }
+
   /* About Section */
   #about {
     display: grid;
@@ -612,115 +608,85 @@ body {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 1fr 5% 0.3fr 0.3fr 0.3fr;
-    grid-template-rows: repeat(3, auto);
-    row-gap: var(--r-gap);
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    row-gap: 56px;
+    height: auto;
   }
   .about-title {
     grid-column: 1/2;
     grid-row: 1/2;
-    align-self: end;
+    justify-self: center;
+    text-align: center;
   }
   .about-description {
+    color: var(--sec-t);
     grid-column: 1/2;
     grid-row: 2/3;
-    align-self: center;
-  }
-  .about-button {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    align-self: start;
-  }
-  .about-pic {
-    width: 100%;
-    border-radius: var(--brad);
-    box-shadow: var(--box-shadow);
-  }
-  .pic1 {
-    grid-column: 3/5;
-    grid-row: 1/3;
-  }
-  .pic2 {
-    grid-column: 4/6;
-    grid-row: 2/4;
+     justify-self: center;
+    text-align: center;
   }
 
-  /* Gallery Section */
-  #gallery {
+  /* Benefits Section */
+    /* box-shadow: var(--box-shadow); */
+  #benefits {
     display: grid;
     grid-template-columns: var(--wcol);
     grid-template-rows: var(--wrow);
     background-color: var(--f-background);
   }
-  .gallery-container {
+  .benefits-container {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
     row-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 5% 1fr;
+    grid-template-rows: 100%;
+      /* grid-template-columns: 1fr 5% 0.3fr 0.3fr 0.3fr; */
   }
-  .gallery-title {
-    grid-column: 1/2;
+    .benefits-text{
+    grid-column:1/2;
+    grid-row: 1/2;
+  }
+  .benefits-text-dropdown{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: auto auto;
+  }
+
+  .benefits-title {
+  
+
+  }
+  .benefits-description {
+    grid-column:1/2;
+    grid-row: 2/3;
+ color: var(--sec-t);
+ padding: 10px 0;
+  }
+  .benefits-picture {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .benefits-icon {
+    color: var(--sec-c);
+      grid-column: 2/3;
     grid-row: 1/2;
     align-self: center;
     justify-self: center;
+    cursor: pointer;
   }
-  .gallery-description {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    align-self: center;
-    justify-self: center;
-  }
-  .gallery-pictures {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-    row-gap: 25px;
-    column-gap: 25px;
-  }
-  .gallery-button {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    align-self: start;
-    justify-self: center;
-  }
-  .gallery-pic {
-    height: auto;
+  .benefits-pic {
+    height: 100%;
     align-self: center;
     justify-self: center;
     border-radius: var(--brad);
     box-shadow: var(--box-shadow);
   }
-  .gallery-1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-  .gallery-2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .gallery-3 {
-    grid-column: 3/4;
-    grid-row: 1/3;
-  }
-  .gallery-4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .gallery-5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .gallery-6 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  .gallery-7 {
-    grid-column: 2/3;
-    grid-row: 2/3;
+  .open{}
+  .closed{}
+ .closed h5{
+    display: none;
   }
 
      /* Price Section */
