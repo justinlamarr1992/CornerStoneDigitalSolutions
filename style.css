@@ -919,8 +919,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
   }
-
   .test-image {
     padding-bottom: 10px;
     color: var(--sec-c);
@@ -940,16 +940,6 @@ body {
   .test-company{
     color: var(--tri-t);
   }
-  .closed{
-    display:none;
-  }
-  /* .test-source {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    align-self: start;
-    color: var(--pri-t);
-    margin: 0;
-  } */
 
   /* CTA Section */
   #cta {
