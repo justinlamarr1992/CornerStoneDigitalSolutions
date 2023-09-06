@@ -724,6 +724,16 @@ body {
 
   .feature-im-tx{
     padding:100px 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-text{
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
   }
   .feature-1{
     grid-column: 1/2;
@@ -760,25 +770,23 @@ body {
     grid-row: 1/4;
     justify-self: center;
     align-self: center;
-    background: #73ead9;
+    background: #73ead8c0;
     border-radius: 50%;
-
-    height:100px;
-    width:100px;
+    height:250px;
+    width:250px;
     position: relative;
-    box-shadow: 0 0 0 100px #6bdfe37c, 0 0 0 200px #66d8ec79,  0 0 0 300px #5ccef46f;
-    /* box-shadow: 0 0 0 200px orange; */
-    /* margin:100px; */
+    box-shadow: 0 0 0 100px #6bdfe37c, 0 0 0 150px #66d8ec79,  0 0 0 200px #5ccef46f;
 }
-#circle-2{
-  background: #6bdfe3;
+.circle-text{
+  text-align: center;
+  z-index: 1;
+grid-column:1/4;
+grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    padding: 0 27%;
 }
-#circle-3{
-  background: #66d8ec;
-}
-#circle-4{
-  background: #5ccdf4;
-}
+
  
   /* Team Section */
   #team {
