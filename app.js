@@ -47,3 +47,15 @@ function changeToMember2() {
   member2.classList.add("displayNone");
   return false;
 }
+
+// moving circle
+var circle = document.getElementsByClassName("circle");
+function moveCircle(e) {
+  TweenLite.to(circle, 0.3, {
+    css: {
+      left: e.pageX,
+      top: e.pageY,
+    },
+  });
+}
+addEventListener("mousemove", moveCircle);
