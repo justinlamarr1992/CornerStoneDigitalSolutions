@@ -28,26 +28,6 @@ function doModal(anchor, popupbox) {
   });
 }
 
-// Team
-function changeToMember1() {
-  var member1 = document.getElementById("team-pic-member1");
-  var member2 = document.getElementById("team-pic-member2");
-  member1.classList.add("displayBlock");
-  member2.classList.remove("displayBlock");
-  member2.classList.remove("displayNone");
-  member1.classList.add("displayNone");
-  return false;
-}
-function changeToMember2() {
-  var member2 = document.getElementById("team-pic-member2");
-  var member1 = document.getElementById("team-pic-member2");
-  member2.classList.add("displayBlock");
-  member1.classList.remove("displayBlock");
-  member1.classList.remove("displayNone");
-  member2.classList.add("displayNone");
-  return false;
-}
-
 // moving circle
 var circle = document.getElementsByClassName("circle");
 function moveCircle(e) {
@@ -59,3 +39,54 @@ function moveCircle(e) {
   });
 }
 addEventListener("mousemove", moveCircle);
+
+// Benefits Accordian
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+// Benefits SlideShow
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("benefits-pic");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Feature Icon selection and Text Change
+var fea = document.getElementsByClassName("feature-im-tx");
+var circleText = document.getElementsByClassName("circle-text");
+var j;
+
+for (j = 0; j < fea.length; j++) {
+  fea[j].addEventListener("click", function () {
+    console.log(circleText);
+    circleText.innerHTML = "";
+    circleText.appendChild(document.createTextNode("Hey this is a new text"));
+  });
+}
