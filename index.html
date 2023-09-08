@@ -114,8 +114,41 @@
     </div>
     <div id="benefits">
       <div class="benefits-container">
-        <!-- Make Logic to open dropdowns in JS-->
-        <div class="benefits-text">
+        <div class="benefits-accordian-container">
+          <button class="accordion">Lead Generation Expertise you Need</button>
+          <div class="panel">
+            <h5 class="benefits-description">
+              Quality leads or efective sales are always our main goal so it’s
+              only fair you pay by lead or sale we generate.
+            </h5>
+          </div>
+
+          <button class="accordion">Comprehensive Campaign Management</button>
+          <div class="panel">
+            <h5 class="benefits-description">
+              Recommend, create, distribute and optimize campaigns based on
+              client goals and acquisition cost.
+            </h5>
+          </div>
+
+          <button class="accordion">Collection Models and Sources</button>
+          <div class="panel">
+            <h5 class="benefits-description">
+              Display, Emailing, Push Notification, SMS, Coregistration
+              (dedicated website).
+            </h5>
+          </div>
+          <button class="accordion">Payment Per User</button>
+          <div class="panel">
+            <h5 class="benefits-description">
+              We only manage valid registrations, so clients have full control
+              over their budget and business model.
+            </h5>
+          </div>
+        </div>
+
+        <!-- Make Logic to open accordian in JS-->
+        <!-- <div class="benefits-text">
           <div class="benefits-text-dropdown open">
             <h3 class="benefits-title">Lead Generation Expertise you Need</h3>
             <h5 class="benefits-description">
@@ -148,12 +181,47 @@
             </h5>
             <h3 class="benefits-icon icon4">+</h3>
           </div>
-        </div>
+        </div> -->
         <!-- Rotating Pictures -->
         <div class="benefits-picture">
           <img
             class="benefits-pic"
+            src="./assets/CostPerClick1Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
+            src="./assets/CostPerClick2Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
             src="./assets/CostPerClick3Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
+            src="./assets/CostPerClick4Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
+            src="./assets/CostPerClick5Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
+            src="./assets/CostPerClick6Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
+            src="./assets/CostPerClick7Final.jpeg"
+            alt="Past Work"
+          />
+          <img
+            class="benefits-pic"
+            src="./assets/CostPerClick8Final.jpeg"
             alt="Past Work"
           />
         </div>
@@ -163,35 +231,87 @@
       <!-- FEATURES -->
       <div class="features-container">
         <div id="circle-1"></div>
-        <h3 class="circle-text">
+        <h3 class="circle-text default-text">
+          Click one of the bubbles to discover more features Cornerstone Digital
+          Solutions can bring to your business!
+        </h3>
+        <h3 class="circle-text social-media-text closed">
           Leverage the power of socail media to foster meaningful connections
           with your community. We’ll manage your accounts, curate engaging
           content, and handle interactions on your behalf.
         </h3>
+        <h3 class="circle-text media-buying-text closed">
+          Qualified traffic generation with Google Adwords, Facebook, Instagram
+          etc.
+        </h3>
+        <h3 class="circle-text content-marketing-text closed">
+          Engage your constituents with compelling content. Our expert
+          copywriters will deliver relevant and impactful messages, ensuring
+          your agency's voice is heard loud and clear.
+        </h3>
+        <h3 class="circle-text anaylitic-text closed">
+          Make informed decisions with our comprehensive analytics and
+          reporting. Track the performance of your campaigns, measure success,
+          and refine strategies for ongoing improvement.
+        </h3>
+        <h3 class="circle-text brand-awareness-text closed">
+          Build a strong and reputable brand identity within the government
+          sector. Our brand awareness campaigns will ensure that your agency's
+          mission and values are well-known and respected.
+        </h3>
+        <h3 class="circle-text SEO-text closed">
+          Enhance your agency's online visibility and reach with our SEO
+          services. We'll optimize your website to rank higher in search
+          results, driving increased traffic and awareness.
+        </h3>
 
-        <div class="feature-im-tx feature-1">
+        <div
+          class="feature-im-tx feature-1"
+          onmouseover="circleText1()"
+          onmouseout="defaultText()"
+        >
           <i class="fa-solid fa-cart-shopping"></i>
-          <h4 class="feature-text">Social Media Management</h4>
+          <h5 class="feature-text">Social Media Management</h5>
         </div>
-        <div class="feature-im-tx feature-2">
+        <div
+          class="feature-im-tx feature-2"
+          onmouseover="circleText2()"
+          onmouseout="defaultText()"
+        >
           <i class="fa-solid fa-share-nodes"></i>
-          <h4 class="feature-text">Media Buying</h4>
+          <h5 class="feature-text">Media Buying</h5>
         </div>
-        <div class="feature-im-tx feature-3">
+        <div
+          class="feature-im-tx feature-3"
+          onmouseover="circleText3()"
+          onmouseout="defaultText()"
+        >
           <i class="fa-solid fa-globe"></i>
-          <h4 class="feature-text">Content Marketing<br />and Copywriting</h4>
+          <h5 class="feature-text">Content Marketing<br />and Copywriting</h5>
         </div>
-        <div class="feature-im-tx feature-4">
+        <div
+          class="feature-im-tx feature-4"
+          onmouseover="circleText4()"
+          onmouseout="defaultText()"
+        >
           <i class="fa-solid fa-chart-pie"></i>
-          <h4 class="feature-text">Analytics and Reporting</h4>
+          <h5 class="feature-text">Analytics and Reporting</h5>
         </div>
-        <div class="feature-im-tx feature-5">
+        <div
+          class="feature-im-tx feature-5"
+          onmouseover="circleText5()"
+          onmouseout="defaultText()"
+        >
           <i class="fa-solid fa-envelope-open-text"></i>
-          <h4 class="feature-text">Brand Awareness</h4>
+          <h5 class="feature-text">Brand Awareness</h5>
         </div>
-        <div class="feature-im-tx feature-6">
+        <div
+          class="feature-im-tx feature-6"
+          onmouseover="circleText6()"
+          onmouseout="defaultText()"
+        >
           <i class="fa-solid fa-magnifying-glass-chart"></i>
-          <h4 class="feature-text">Search Engine<br />Optimization (SEO)</h4>
+          <h5 class="feature-text">Search Engine<br />Optimization (SEO)</h5>
         </div>
       </div>
     </div>
