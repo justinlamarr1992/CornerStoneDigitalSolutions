@@ -1,4 +1,4 @@
-@import "compass/css3";
+/* @import "compass/css3"; */
 
 /* colors */
 :root {
@@ -525,7 +525,7 @@ z-index: 3;
     /* cursor: pointer; */
     /* margin-right: auto; */
     color: var(--sec-t);
-    width: 50%;
+    width: 45%;
   }
   .logo-text {
     margin: 20px 0;
@@ -878,6 +878,7 @@ grid-row: 2/3;
     justify-self: center;
     align-self: center;
     padding: 0 27%;
+    min-height: 160px;
 }
 
  
@@ -976,13 +977,16 @@ grid-row: 2/3;
     grid-column: 1/2;
     grid-row: 3/4;
     justify-content: center;
+  width: 100%;
   }
   .testimony-example{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
   }
+  /* CSS-Tricks */
+  /* cell number */
+
   .test-image {
     padding-bottom: 10px;
     color: var(--sec-c);
@@ -1017,7 +1021,7 @@ grid-row: 2/3;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
   }
     .cta-title {
     color: var(--pri-t);
@@ -1067,6 +1071,25 @@ grid-row: 2/3;
     grid-row: 3/4;
     justify-self: center;
   }
+  .cta-info-word{
+     grid-column:1/2;
+    grid-row:4/5; 
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+  .cta-info-word-area{
+    padding-top:50px;
+  }
+  .cta-info-word-phone{
+    color: var(--pri-t);
+    padding-top:10px;
+  }
+  .cta-info-word-email{
+    color: var(--pri-t);
+    padding-top:10px;
+  }
 
   /* Footer */
   footer {
@@ -1080,8 +1103,8 @@ grid-row: 2/3;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: auto;
+    grid-template-columns: auto 30%;
+    grid-template-rows: auto auto;
   }
   .foot-first {
     grid-column: 1/2;
@@ -1091,14 +1114,8 @@ grid-row: 2/3;
   }
   .footer-disclaimer {
     margin: 0;
-       grid-column: 2/4;
+       grid-column: 1/3;
     grid-row: 2/3;
-    justify-self: end;
-  }
-  .foot-second {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: center;
     justify-self: center;
   }
   .footer-info-word {
@@ -1107,10 +1124,10 @@ grid-row: 2/3;
     color: var(--pri-t);
   }
   .foot-third {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
     align-self: center;
-    justify-self: center;
+    justify-self: end;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1120,12 +1137,15 @@ grid-row: 2/3;
   }
   .footer-image {
     width:100%;
-    /* cursor: pointer; */
+  }
+  .footer-image2 {
+    width:25%;
   }
   .justappin {
     font-size: 0.75rem;
     text-decoration: none;
     color: var(--pri-t);
+    align-self: center;
   }
   /* Modal Test */
 }

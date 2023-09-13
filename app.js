@@ -134,3 +134,10 @@ function circleText6() {
   dTxt[0].classList.add("closed");
   fea6[0].classList.remove("closed");
 }
+
+// Testimonial Carousel
+var flkty = new Flickity(".testimonials", {
+  // options
+  cellAlign: "left",
+  contain: true,
+});

@@ -32,6 +32,10 @@
       src="https://kit.fontawesome.com/a3c1e4db5c.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
   </head>
@@ -47,8 +51,8 @@
         </a>
         <nav class="navbar-links">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#features">Features</a></li>
             <li><a href="#team">Our Team</a></li>
           </ul>
         </nav>
@@ -231,11 +235,11 @@
       <!-- FEATURES -->
       <div class="features-container">
         <div id="circle-1"></div>
-        <h3 class="circle-text default-text">
+        <h3 class="circle-text default-text closed">
           Click one of the bubbles to discover more features Cornerstone Digital
           Solutions can bring to your business!
         </h3>
-        <h3 class="circle-text social-media-text closed">
+        <h3 class="circle-text social-media-text">
           Leverage the power of socail media to foster meaningful connections
           with your community. We’ll manage your accounts, curate engaging
           content, and handle interactions on your behalf.
@@ -330,7 +334,10 @@
         <p class="testimony-description">
           These are some of our customers reviews!
         </p>
-        <div class="testimonials">
+        <div
+          class="testimonials js-flickity"
+          data-flickity-options='{ "cellAlign": "left", "contain": true }'
+        >
           <!-- TODO PAGINATION FOR MOBILE AND TABLET TESTIMONIES -->
           <div class="testimony-example">
             <i class="fas fa-user-circle fa-10x test-image"></i>
@@ -441,7 +448,17 @@
           </div>
           <input class="cta-form-submit" type="submit" value="Transform Us" />
         </form>
-        <!-- TODO: CTA FORM HERE -->
+        <div class="cta-info-word">
+          <h3 class="cta-info-word-area">Washington DC Area</h3>
+          <a class="cta-info-word-phone" href="tel:+1(757)777-2902"
+            ><h4>757-777-2902</h4></a
+          >
+          <a
+            href="mailto:info@cornerstonedigitalsolutions.net"
+            class="cta-info-word-email"
+            ><h4>Info@CornerStoneDigitalSolutions.net</h4></a
+          >
+        </div>
       </div>
     </div>
     <footer>
@@ -451,24 +468,11 @@
           <!-- <h3 class="logo">Chris Creative CakeBalls</h3> -->
           <img class="footer-image" src="./assets/Logo_BLetter.png" alt="" />
         </div>
-        <div class="foot-second">
-          <h6 class="footer-info-word">(METROPLEX AREA)</h6>
-          <a class="footer-info-word" href="tel:+1(913)963-2229"
-            >(TELEPHONE NUMBER)</a
-          >
-          <br />
-          <a
-            href="mailto:neworleansdrivewaycleaning@gmail.com"
-            class="footer-info-word"
-            >(EMAIL ADDRESS)</a
-          >
-          <br />
-        </div>
         <a class="foot-third" href="https://www.justappin.com" target="_blank">
           <img
             src="./assets/JustAppin.png"
             alt="JustAPPin' Logo"
-            class="footer-image"
+            class="footer-image2"
           />
           <p class="justappin">This Website Was Made by JustAPPin' LLC</p>
         </a>
@@ -480,6 +484,7 @@
       </div>
     </footer>
     <div class="circle"></div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="app.js"></script>
     <!-- TODO: ADD FIREBASE <SCRIPT> HERE IF WITH GOOGLE FIREBASE -->
