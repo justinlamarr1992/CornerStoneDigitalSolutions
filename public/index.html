@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Primary Meta Tags -->
-    <title>Name of Company</title>
+    <title>Firebase Updating 1.0.2</title>
     <meta name="title" content="Name of Company" />
     <!--TODO SEO Content Stuff Here -->
     <meta name="description" content="SEO Stuff Here" />
@@ -28,6 +28,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Name of Company</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <!-- <script
+      defer
+      src="/__/firebase/10.3.1/firebase-functions-compat.js"
+    ></script> -->
+    <script
+      defer
+      src="/__/firebase/10.3.1/firebase-analytics-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
     <script
       src="https://kit.fontawesome.com/a3c1e4db5c.js"
       crossorigin="anonymous"
@@ -488,5 +504,28 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="app.js"></script>
     <!-- TODO: ADD FIREBASE <SCRIPT> HERE IF WITH GOOGLE FIREBASE -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCdr8ZBe0mVG8wDKzt6-7DSWsDMbGKEw00",
+        authDomain: "cornerstonedigitalsoultions.firebaseapp.com",
+        projectId: "cornerstonedigitalsoultions",
+        storageBucket: "cornerstonedigitalsoultions.appspot.com",
+        messagingSenderId: "555920621137",
+        appId: "1:555920621137:web:828ee4c895f5e52b548270",
+        measurementId: "G-QCSVE956KW",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
