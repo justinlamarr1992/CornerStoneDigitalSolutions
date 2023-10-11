@@ -1174,9 +1174,11 @@ grid-row: 2/3;
 @media screen and (max-width: 1080px) {
   h1 {
     font-size: var(--mh1);
+    line-height: 68px;
   }
   h2 {
     font-size: var(--mh2);
+    line-height: 48px;
   }
   h3 {
     font-size: var(--mh3);
@@ -1293,25 +1295,45 @@ grid-row: 2/3;
     text-align: center;
     padding: 0;
   }
-  .about-button {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    align-self: center;
-    justify-self: center;
-  }
-  .pic1 {
-    grid-column: 1/3;
-    grid-row: 4/6;
-  }
-  .pic2 {
-    grid-column: 2/4;
-    grid-row: 5/7;
-  }
-  /* Gallery Section */
-  #gallery {
+
+  /* Benefits Section */
+  #benefits {
     grid-template-columns: var(--mcol);
     grid-template-rows: var(--mrow);
   }
+  .benefits-container{
+    row-gap: 0;
+  }
+  .accordion{
+    padding: 10px;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 12px;
+  }
+
+  /* Features Section */
+  #features{
+    display: grid;
+    grid-template-columns: var(--mcol);
+    grid-template-rows: var(--mrow);
+    padding: 50px 0;
+  }
+  .features-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--c-gap);
+    row-gap: 50px;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #circle-1{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 25px #6bdfe37c, 0 0 0 50px #66d8ec79,  0 0 0 75px #5ccef46f;
+    /* box-shadow: 0 0 0 100px #6bdfe37c, 0 0 0 150px #66d8ec79,  0 0 0 200px #5ccef46f; */
+  }
+  
 
 
   /* Team Section */
