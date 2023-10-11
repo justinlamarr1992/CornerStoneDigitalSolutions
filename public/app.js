@@ -134,6 +134,9 @@ function circleText6() {
   dTxt[0].classList.add("closed");
   fea6[0].classList.remove("closed");
 }
+function testClick() {
+  console.log("I guess it work");
+}
 
 // Testimonial Carousel
 var flkty = new Flickity(".testimonials", {
