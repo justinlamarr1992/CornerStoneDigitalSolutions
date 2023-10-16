@@ -108,32 +108,64 @@ function defaultText() {
   fea5[0].classList.add("closed");
   fea6[0].classList.add("closed");
 
-  dTxt[0].classList.remove("closed");
+  // dTxt[0].classList.remove("closed");
 }
 function circleText1() {
   dTxt[0].classList.add("closed");
+  fea1[0].classList.remove("closed");
+}
+function circle1Click() {
+  defaultText();
   fea1[0].classList.remove("closed");
 }
 function circleText2() {
   dTxt[0].classList.add("closed");
   fea2[0].classList.remove("closed");
 }
+function circle2Click() {
+  defaultText();
+  fea2[0].classList.remove("closed");
+}
 function circleText3() {
   dTxt[0].classList.add("closed");
   fea3[0].classList.remove("closed");
 }
+
+function circle3Click() {
+  defaultText();
+  fea3[0].classList.remove("closed");
+}
+
 function circleText4() {
   dTxt[0].classList.add("closed");
   fea4[0].classList.remove("closed");
 }
+
+function circle4Click() {
+  defaultText();
+  fea4[0].classList.remove("closed");
+}
+
 function circleText5() {
   dTxt[0].classList.add("closed");
   fea5[0].classList.remove("closed");
 }
+
+function circle5Click() {
+  defaultText();
+  fea5[0].classList.remove("closed");
+}
+
 function circleText6() {
   dTxt[0].classList.add("closed");
   fea6[0].classList.remove("closed");
 }
+
+function circle6Click() {
+  defaultText();
+  fea6[0].classList.remove("closed");
+}
+
 function testClick() {
   console.log("I guess it work");
 }
