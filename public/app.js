@@ -176,3 +176,29 @@ var flkty = new Flickity(".testimonials", {
   cellAlign: "left",
   contain: true,
 });
+
+// CTA
+var ctaName = document.getElementsByClassName("cta-form-name-input");
+var ctaEmail = document.getElementsByClassName("cta-form-email-input");
+var ctaNumber = document.getElementsByClassName("cta-form-phone-input");
+var ctaMessage = document.getElementsByClassName("cta-form-message-input");
+
+// function sendEmail() {
+//   event.preventDefault();
+//   console.log(
+//     "Does it send ALL of it?",
+//     ctaName[0].value,
+//     ctaEmail[0].value,
+//     ctaNumber[0].value,
+//     ctaMessage[0].value
+//   );
+//   this.contact_number.value = (Math.random() * 100000) | 0;
+//   emailjs.sendForm("contact_service", "cta-form", this).then(
+//     function () {
+//       console.log("SUCCESS!");
+//     },
+//     function (error) {
+//       console.log("FAILED...", error);
+//     }
+//   );
+// }

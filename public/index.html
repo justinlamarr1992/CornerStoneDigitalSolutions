@@ -4,30 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Primary Meta Tags -->
-    <title>Firebase Updating 1.0.2</title>
-    <meta name="title" content="Name of Company" />
+    <title>Cornerstone Digital Solutions (BETA)</title>
+    <meta
+      name="title"
+      content="Welcome to Cornerstone Digital Solutions Empowering Government Agencies through Digital Excellence "
+    />
     <!--TODO SEO Content Stuff Here -->
     <meta name="description" content="SEO Stuff Here" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <!--TODO INSERT Company website -->
-    <meta property="og:url" content="https://www.ENTERHERE.com/" />
-    <meta property="og:title" content="Name of Company" />
+    <meta
+      property="og:url"
+      content="https://cornerstonedigitalsolutions.net//"
+    />
+    <meta
+      property="og:title"
+      content="Welcome to Cornerstone Digital Solutions Empowering Government Agencies through Digital Excellence "
+    />
     <meta property="og:description" content="SEO Stuff Here" />
-    <meta property="og:image" content="./images/Logo.png" />
+    <meta property="og:image" content="./assets/Logo_BLetter.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.ENTERHERE.com/" />
-    <meta property="twitter:title" content="Name of Company" />
+    <meta
+      property="twitter:url"
+      content="https://cornerstonedigitalsolutions.net//"
+    />
+    <meta
+      property="twitter:title"
+      content="Welcome to Cornerstone Digital Solutions Empowering Government Agencies through Digital Excellence "
+    />
     <meta property="twitter:description" content="SEO Stuff Here" />
-    <meta property="twitter:image" content="./images/Logo.png" />
+    <meta property="twitter:image" content="./assets/Logo_BLetter.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name of Company</title>
+    <title>Cornerstone Digital Solutions (BETA)</title>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/10.3.1/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -48,6 +63,37 @@
       src="https://kit.fontawesome.com/a3c1e4db5c.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("yrdKDdO5baPH61Nq5");
+      })();
+    </script>
+    <!-- TEST -->
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("cta-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_y8f06j5", "template_n8w8yrb", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+    <!-- TEST -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -363,10 +409,12 @@
           of experts and take your marketing to the next level. What are you
           waiting for? Take the first step today.
         </h5>
-        <form class="cta-form">
+        <form class="cta-form" id="cta-form">
+          <input type="hidden" name="contact_number" />
           <div class="cta-form-name">
             <label><h5>Name</h5></label>
             <input
+              name="name"
               class="cta-form-name-input"
               type="text"
               placeholder="Enter Name Here"
@@ -376,6 +424,7 @@
           <div class="cta-form-email">
             <label><h5>Email</h5></label>
             <input
+              name="email"
               class="cta-form-email-input"
               type="email"
               placeholder="Enter Email Here"
@@ -385,6 +434,7 @@
           <div class="cta-form-phone">
             <label><h5>Phone Number</h5></label>
             <input
+              name="phone"
               class="cta-form-phone-input"
               type="tel"
               placeholder="Enter Phone Number Here"
@@ -394,6 +444,7 @@
           <div class="cta-form-message">
             <label><h5>Message</h5></label>
             <textarea
+              name="message"
               class="cta-form-message-input"
               rows="5"
               cols="33"
@@ -441,6 +492,7 @@
     <div class="circle"></div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
     <script src="app.js"></script>
     <!-- TODO: ADD FIREBASE <SCRIPT> HERE IF WITH GOOGLE FIREBASE -->
     <script type="module">
