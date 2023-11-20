@@ -48,6 +48,37 @@
       src="https://kit.fontawesome.com/a3c1e4db5c.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("yrdKDdO5baPH61Nq5");
+      })();
+    </script>
+    <!-- TEST -->
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("cta-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_y8f06j5", "template_n8w8yrb", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+    <!-- TEST -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -363,10 +394,12 @@
           of experts and take your marketing to the next level. What are you
           waiting for? Take the first step today.
         </h5>
-        <form class="cta-form">
+        <form class="cta-form" id="cta-form">
+          <input type="hidden" name="contact_number" />
           <div class="cta-form-name">
             <label><h5>Name</h5></label>
             <input
+              name="name"
               class="cta-form-name-input"
               type="text"
               placeholder="Enter Name Here"
@@ -376,6 +409,7 @@
           <div class="cta-form-email">
             <label><h5>Email</h5></label>
             <input
+              name="email"
               class="cta-form-email-input"
               type="email"
               placeholder="Enter Email Here"
@@ -385,6 +419,7 @@
           <div class="cta-form-phone">
             <label><h5>Phone Number</h5></label>
             <input
+              name="phone"
               class="cta-form-phone-input"
               type="tel"
               placeholder="Enter Phone Number Here"
@@ -394,6 +429,7 @@
           <div class="cta-form-message">
             <label><h5>Message</h5></label>
             <textarea
+              name="message"
               class="cta-form-message-input"
               rows="5"
               cols="33"
@@ -441,6 +477,7 @@
     <div class="circle"></div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
     <script src="app.js"></script>
     <!-- TODO: ADD FIREBASE <SCRIPT> HERE IF WITH GOOGLE FIREBASE -->
     <script type="module">
